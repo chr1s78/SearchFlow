@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct SearchFlowApp: App {
+    
+    @StateObject var vm = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if vm.isSearch {
+                SearchView().environmentObject(vm)
+                    .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.4)))
+            } else {
+                HomeView().environmentObject(vm)
+                    .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.4)))
+            }
         }
     }
 }

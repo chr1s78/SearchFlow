@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		AD2BEF54270379FE00E0E5BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEF53270379FE00E0E5BA /* ContentView.swift */; };
 		AD2BEF56270379FF00E0E5BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2BEF55270379FF00E0E5BA /* Assets.xcassets */; };
 		AD2BEF59270379FF00E0E5BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2BEF58270379FF00E0E5BA /* Preview Assets.xcassets */; };
+		AD2BEF6227037A1A00E0E5BA /* Ambassador in Frameworks */ = {isa = PBXBuildFile; productRef = AD2BEF6127037A1A00E0E5BA /* Ambassador */; };
+		AD2BEF6527037E4A00E0E5BA /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEF6427037E4A00E0E5BA /* HTTPServer.swift */; };
+		AD2BEF6927037E7000E0E5BA /* MockJSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEF6727037E7000E0E5BA /* MockJSONData.swift */; };
+		AD2BEF6A27037E7000E0E5BA /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEF6827037E7000E0E5BA /* StockModel.swift */; };
+		AD2BEF9927096E2C00E0E5BA /* FirstResponderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEF9827096E2C00E0E5BA /* FirstResponderTextField.swift */; };
+		AD2BEFA6270AA39F00E0E5BA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEFA5270AA39F00E0E5BA /* ViewModel.swift */; };
+		AD2BEFA8270AA3CE00E0E5BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEFA7270AA3CE00E0E5BA /* HomeView.swift */; };
+		AD2BEFAA270AA3D500E0E5BA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BEFA9270AA3D500E0E5BA /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		AD2BEF55270379FF00E0E5BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2BEF58270379FF00E0E5BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD2BEF5A270379FF00E0E5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2BEF6427037E4A00E0E5BA /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
+		AD2BEF6727037E7000E0E5BA /* MockJSONData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockJSONData.swift; sourceTree = "<group>"; };
+		AD2BEF6827037E7000E0E5BA /* StockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		AD2BEF9827096E2C00E0E5BA /* FirstResponderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstResponderTextField.swift; sourceTree = "<group>"; };
+		AD2BEFA5270AA39F00E0E5BA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AD2BEFA7270AA3CE00E0E5BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD2BEFA9270AA3D500E0E5BA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2BEF6227037A1A00E0E5BA /* Ambassador in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +68,10 @@
 		AD2BEF50270379FE00E0E5BA /* SearchFlow */ = {
 			isa = PBXGroup;
 			children = (
+				AD2BEF9A27096E3000E0E5BA /* View Models */,
+				AD2BEF9727096E2100E0E5BA /* Views */,
+				AD2BEF6627037E5B00E0E5BA /* Models */,
+				AD2BEF6327037E3B00E0E5BA /* IOS Server */,
 				AD2BEF51270379FE00E0E5BA /* SearchFlowApp.swift */,
 				AD2BEF53270379FE00E0E5BA /* ContentView.swift */,
 				AD2BEF55270379FF00E0E5BA /* Assets.xcassets */,
@@ -67,6 +87,41 @@
 				AD2BEF58270379FF00E0E5BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD2BEF6327037E3B00E0E5BA /* IOS Server */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BEF6427037E4A00E0E5BA /* HTTPServer.swift */,
+			);
+			path = "IOS Server";
+			sourceTree = "<group>";
+		};
+		AD2BEF6627037E5B00E0E5BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BEF6727037E7000E0E5BA /* MockJSONData.swift */,
+				AD2BEF6827037E7000E0E5BA /* StockModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD2BEF9727096E2100E0E5BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BEF9827096E2C00E0E5BA /* FirstResponderTextField.swift */,
+				AD2BEFA7270AA3CE00E0E5BA /* HomeView.swift */,
+				AD2BEFA9270AA3D500E0E5BA /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD2BEF9A27096E3000E0E5BA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BEFA5270AA39F00E0E5BA /* ViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +140,9 @@
 			dependencies = (
 			);
 			name = SearchFlow;
+			packageProductDependencies = (
+				AD2BEF6127037A1A00E0E5BA /* Ambassador */,
+			);
 			productName = SearchFlow;
 			productReference = AD2BEF4E270379FE00E0E5BA /* SearchFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +170,9 @@
 				Base,
 			);
 			mainGroup = AD2BEF45270379FE00E0E5BA;
+			packageReferences = (
+				AD2BEF6027037A1A00E0E5BA /* XCRemoteSwiftPackageReference "Ambassador" */,
+			);
 			productRefGroup = AD2BEF4F270379FE00E0E5BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2BEF54270379FE00E0E5BA /* ContentView.swift in Sources */,
+				AD2BEFAA270AA3D500E0E5BA /* SearchView.swift in Sources */,
+				AD2BEF9927096E2C00E0E5BA /* FirstResponderTextField.swift in Sources */,
+				AD2BEF6A27037E7000E0E5BA /* StockModel.swift in Sources */,
 				AD2BEF52270379FE00E0E5BA /* SearchFlowApp.swift in Sources */,
+				AD2BEF6527037E4A00E0E5BA /* HTTPServer.swift in Sources */,
+				AD2BEFA8270AA3CE00E0E5BA /* HomeView.swift in Sources */,
+				AD2BEF6927037E7000E0E5BA /* MockJSONData.swift in Sources */,
+				AD2BEFA6270AA39F00E0E5BA /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD2BEF6027037A1A00E0E5BA /* XCRemoteSwiftPackageReference "Ambassador" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/chr1s78/Ambassador.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD2BEF6127037A1A00E0E5BA /* Ambassador */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD2BEF6027037A1A00E0E5BA /* XCRemoteSwiftPackageReference "Ambassador" */;
+			productName = Ambassador;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD2BEF46270379FE00E0E5BA /* Project object */;
 }
